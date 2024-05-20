@@ -7,11 +7,23 @@ document.addEventListener("DOMContentLoaded", function() {
 	var experienceDiv = document.getElementById("experience");
 	var projectsButton = document.getElementById("projects-button");
 	var projectsDiv = document.getElementById("projects");
-	const buttonList = [homeButton, educationButton,experienceButton,projectsButton];
+    var certsButton = document.getElementById("certs-button");
+	var certsDiv = document.getElementById("certs");
+    var hobbiesButton = document.getElementById("hobbies-button");
+	var hobbiesDiv = document.getElementById("hobbies");
+    var contactButton = document.getElementById("contact-button");
+	var contactDiv = document.getElementById("contact");
+	const buttonList = [homeButton, educationButton,experienceButton,projectsButton,certsButton,hobbiesButton,contactButton];
+    homeButton.addEventListener("click", function() {
+        homeDiv.scrollIntoView({ behavior: "smooth" });
+    });
     educationButton.addEventListener("click", function() {
         educationDiv.scrollIntoView({ behavior: "smooth" });
-
+        buttonList.forEach(function(el){
+            el.classList.remove("active");
+        });
 		educationDiv.classList.add("active");
+
     });
 	
 	experienceButton.addEventListener("click", function() {
@@ -20,5 +32,14 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 	projectsButton.addEventListener("click", function() {
         projectsDiv.scrollIntoView({ behavior: "smooth" });
+    });
+    certsButton.addEventListener("click", function() {
+        certsDiv.scrollIntoView({ behavior: "smooth" });
+    });
+    hobbiesButton.addEventListener("click", function() {
+        hobbiesDiv.scrollIntoView({ behavior: "smooth" });
+    });
+    contactButton.addEventListener("click", function() {
+        contactDiv.scrollIntoView({ behavior: "smooth" });
     });
 });

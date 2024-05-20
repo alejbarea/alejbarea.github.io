@@ -1,7 +1,13 @@
-body {
-    background-color: yellow;
+@keyframes increaseFontSize {
+  from {}
+  to {font-size: 20px;}
 }
+
 
 .home_columns {
     background-color: gray;
+}
+
+.active {
+	color: red;
 }
