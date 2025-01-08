@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	var homeDiv = document.getElementById("home");
     var educationButton = document.getElementById("education-button");
     var educationDiv = document.getElementById("education");
+    var publicationsButton = document.getElementById("publications-button");
+    var publicationsDiv = document.getElementById("publications");
 	var experienceButton = document.getElementById("experience-button");
 	var experienceDiv = document.getElementById("experience");
 	var projectsButton = document.getElementById("projects-button");
@@ -13,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	var hobbiesDiv = document.getElementById("hobbies");
     var contactButton = document.getElementById("contact-button");
 	var contactDiv = document.getElementById("contact");
-	const buttonList = [homeButton, educationButton,experienceButton,projectsButton,certsButton,hobbiesButton,contactButton];
+	const buttonList = [homeButton, educationButton,experienceButton,projectsButton,certsButton,hobbiesButton,contactButton,publicationsButton];
     homeButton.addEventListener("click", function() {
         homeDiv.scrollIntoView({ behavior: "smooth" });
     });
@@ -41,5 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     contactButton.addEventListener("click", function() {
         contactDiv.scrollIntoView({ behavior: "smooth" });
+    });
+    publicationsButton.addEventListener("click", function () {
+        publicationsDiv.scrollIntoView({ behavior: "smooth"});
     });
 });

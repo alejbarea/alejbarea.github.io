@@ -6,7 +6,8 @@
       var certsDiv = document.getElementById("certs");
       var hobbiesDiv = document.getElementById("hobbies");
       var contactDiv = document.getElementById("contact");
-      const sections = [homeDiv,educationDiv,experienceDiv,certsDiv,hobbiesDiv,contactDiv,projectsDiv];
+      var publicationsDiv = document.getElementById("publicationsDiv");
+      const sections = [homeDiv,educationDiv,experienceDiv,certsDiv,publicationsDiv,hobbiesDiv,contactDiv,projectsDiv];
       const navLinks = document.querySelectorAll('.nav-link');
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
